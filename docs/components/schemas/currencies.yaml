@@ -1,0 +1,16 @@
+components:
+  schemas:
+    ExchangeRates:
+      type: object
+      properties:
+        source:
+          type: enum
+          enum:
+            - USD
+        outcome:
+          type: enum
+          enum:
+            - EUR
+            - UAH
+        amount:
+          type: float

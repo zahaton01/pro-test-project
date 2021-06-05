@@ -1,0 +1,13 @@
+components:
+  responses:
+    SuccessRatesExchanged:
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              result:
+                type: float
+                description: Exchange rates result rounded to .00 percision
+

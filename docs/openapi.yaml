@@ -1,0 +1,20 @@
+openapi: 3.0.2
+info:
+  version: 1.0.0
+  title: Test project
+servers:
+  - url: http://localhost
+paths:
+  /api/currencies/exchange:
+    post:
+      summary: Exchange rates
+      tags:
+        - Currencies
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: components/schemas/currencies.yaml#/components/schemas/ExchangeRates
+      responses:
+        200:
+          $ref: components/responses/currencies.yaml#/components/responses/SuccessRatesExchanged
